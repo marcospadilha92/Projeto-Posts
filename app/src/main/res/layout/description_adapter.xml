@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/street_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="103dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="43dp"
+        android:text="Street"
+        app:layout_constraintBottom_toTopOf="@+id/city_textView"
+        app:layout_constraintEnd_toEndOf="@+id/company_textView"
+        app:layout_constraintStart_toStartOf="@+id/adress_label" />
+
+    <TextView
+        android:id="@+id/city_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:text="City"
+        app:layout_constraintBottom_toTopOf="@+id/zipcode_textView"
+        app:layout_constraintStart_toStartOf="@+id/suite_textView" />
+
+    <TextView
+        android:id="@+id/suite_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Suite"
+        app:layout_constraintStart_toStartOf="@+id/street_textView"
+        app:layout_constraintTop_toBottomOf="@+id/street_textView" />
+
+    <TextView
+        android:id="@+id/zipcode_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zipcode"
+        app:layout_constraintEnd_toEndOf="@+id/city_textView"
+        app:layout_constraintStart_toEndOf="@+id/city_textView"
+        app:layout_constraintTop_toTopOf="@+id/zipcode_label" />
+
+    <TextView
+        android:id="@+id/company_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginBottom="14dp"
+        android:text="Company Name"
+        app:layout_constraintBottom_toTopOf="@+id/catchph_label"
+        app:layout_constraintStart_toEndOf="@+id/companyname_label" />
+
+    <TextView
+        android:id="@+id/bs_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="bs"
+        app:layout_constraintStart_toStartOf="@+id/catchph_textView"
+        app:layout_constraintTop_toBottomOf="@+id/catchph_textView" />
+
+    <TextView
+        android:id="@+id/catchph_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="CatchPhrase"
+        app:layout_constraintStart_toStartOf="@+id/company_textView"
+        app:layout_constraintTop_toBottomOf="@+id/company_textView" />
+
+    <TextView
+        android:id="@+id/name_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="39dp"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="@+id/username_textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/phone_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="18dp"
+        android:text="Phone"
+        app:layout_constraintBottom_toTopOf="@+id/website_textView"
+        app:layout_constraintStart_toStartOf="@+id/website_textView" />
+
+    <TextView
+        android:id="@+id/email_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Email"
+        app:layout_constraintStart_toStartOf="@+id/username_textView"
+        app:layout_constraintTop_toBottomOf="@+id/username_textView" />
+
+    <TextView
+        android:id="@+id/username_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="16dp"
+        android:text="Username"
+        app:layout_constraintStart_toEndOf="@+id/username_label"
+        app:layout_constraintTop_toBottomOf="@+id/name_textView" />
+
+    <TextView
+        android:id="@+id/website_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginBottom="19dp"
+        android:text="Website"
+        app:layout_constraintBottom_toTopOf="@+id/company_label"
+        app:layout_constraintStart_toEndOf="@+id/company_label" />
+
+    <TextView
+        android:id="@+id/name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="39dp"
+        android:text="@string/name"
+        app:layout_constraintStart_toStartOf="@+id/username_label"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/username_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/username"
+        app:layout_constraintEnd_toEndOf="@+id/zipcode_label"
+        app:layout_constraintStart_toStartOf="@+id/website_label"
+        app:layout_constraintTop_toBottomOf="@+id/name_label" />
+
+    <TextView
+        android:id="@+id/email_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/email"
+        app:layout_constraintStart_toStartOf="@+id/username_label"
+        app:layout_constraintTop_toBottomOf="@+id/username_label" />
+
+    <TextView
+        android:id="@+id/adress_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/adress"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bs_label" />
+
+    <TextView
+        android:id="@+id/street_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/street"
+        app:layout_constraintStart_toStartOf="@+id/adress_label"
+        app:layout_constraintTop_toBottomOf="@+id/adress_label" />
+
+    <TextView
+        android:id="@+id/city_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:text="@string/city"
+        app:layout_constraintBottom_toTopOf="@+id/zipcode_label"
+        app:layout_constraintStart_toStartOf="@+id/suite_label" />
+
+    <TextView
+        android:id="@+id/suite_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/suite"
+        app:layout_constraintStart_toStartOf="@+id/street_label"
+        app:layout_constraintTop_toBottomOf="@+id/street_label" />
+
+    <TextView
+        android:id="@+id/zipcode_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/zipcode"
+        app:layout_constraintEnd_toEndOf="@+id/city_label"
+        app:layout_constraintStart_toEndOf="@+id/city_label"
+        app:layout_constraintTop_toBottomOf="@+id/suite_label" />
+
+    <TextView
+        android:id="@+id/phone_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="18dp"
+        android:text="@string/phone"
+        app:layout_constraintBottom_toTopOf="@+id/website_label"
+        app:layout_constraintStart_toStartOf="@+id/website_label" />
+
+    <TextView
+        android:id="@+id/website_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/website"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_label" />
+
+    <TextView
+        android:id="@+id/company_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="@string/company"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/website_label"
+        app:layout_constraintTop_toBottomOf="@+id/website_label" />
+
+    <TextView
+        android:id="@+id/companyname_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:text="@string/company_name"
+        app:layout_constraintBaseline_toBaselineOf="@+id/company_textView"
+        app:layout_constraintStart_toStartOf="@+id/company_label" />
+
+    <TextView
+        android:id="@+id/catchph_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:text="@string/catchphrase"
+        app:layout_constraintStart_toStartOf="@+id/companyname_label"
+        app:layout_constraintTop_toBottomOf="@+id/company_label" />
+
+    <TextView
+        android:id="@+id/bs_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/bs"
+        app:layout_constraintStart_toStartOf="@+id/catchph_label"
+        app:layout_constraintTop_toBottomOf="@+id/catchph_label" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.listaeventos.dto
+package com.example.listaeventos.viewmodel
 
 class PostList {
     val userId: Int = 0
